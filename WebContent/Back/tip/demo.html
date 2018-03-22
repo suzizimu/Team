@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>漫画原创鼠标悬浮气泡提示Jquery插件</title>
+
+
+<link href="css/manhua_hoverTips.css" type="text/css" rel="stylesheet" />
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/manhua_hoverTips.js"></script>
+<script type="text/javascript">
+$(function (){
+	$("#tt").manhua_hoverTips();//使用默认参数，所以不用调用最简洁
+	$("#tl").manhua_hoverTips({position : "l"});//改变了显示的位置参数
+	$("#tr").manhua_hoverTips({position : "r"});//改变了显示的位置参数
+	$("#tb").manhua_hoverTips({position : "b"});//改变了显示的位置参数
+});
+
+</script>
+</head>
+
+<body>
+<center>
+<br /><br /><br /><br /><br />
+<br />
+<br />
+<br />
+<br />
+<br /><a id="tb" class="tag"  href="http://www.17sucai.com" tips="17素材网是一个专门分享jquery资源、jquery插件、jquery特效的一个网站。">17素材网-测试上边</a>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<a id="tr" class="tag"  href="http://www.17sucai.com" tips="17素材网是一个专门分享jquery资源、jquery插件、jquery特效的一个网站。">17素材网-测试左边</a><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<a id="tl" class="tag" href="http://www.17sucai.com" tips="17素材网是一个专门分享jquery资源、jquery插件、jquery特效的一个网站。">17素材网-测试右边</a><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<a id="tt" class="tag"  href="http://www.17sucai.com" tips="17素材网是一个专门分享jquery资源、jquery插件、jquery特效的一个网站。">17素材网-测试下边</a>
+</center><br />
+
+</body>
+</html>
